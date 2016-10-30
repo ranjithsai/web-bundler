@@ -1,0 +1,36 @@
+{
+	"name": "web-builder",
+	"version": "1.0.0",
+	"dependencies": {
+		"grunt-contrib-qunit": {
+			"version": "0.7.0",
+			"from": "grunt-contrib-qunit@0.7.0",
+			"dependencies": {
+				"grunt-lib-phantomjs": {
+					"version": "0.7.1",
+					"from": "grunt-lib-phantomjs@0.7.1"
+				}
+			}
+		},
+		"grunt-qunit-junit": {
+			"version": "0.3.1",
+			"from": "grunt-qunit-junit@0.3.1",
+			"dependencies": {
+				"underscore": {
+					"version": "1.6.0",
+					"from": "underscore@1.6.0"
+				}
+			}
+		},
+		"grunt-contrib-less": {
+			"version": "1.1.0",
+			"from": "grunt-contrib-less@1.1.0",
+			"dependencies": {
+				"less": {
+					"version": "2.5.3",
+					"from": "less@2.5.3"
+				}
+			}
+		}
+	}
+}

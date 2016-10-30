@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>QUnit Tests Suite: CX-Widget</title>
+		<link rel="stylesheet" href="lib/thirdparty/qunit/qunit.css">
+		<script data-main="" src="lib/thirdparty/require.js"></script>
+		<script src="lib/thirdparty/jquery-2.1.4.js"></script>
+		<script src="require.config.js"></script>   
+
+		<script>
+		var wb = {};
+		wb.require = require;
+		wb.define = define;
+		
+			wb.require([
+				'qunit',
+				'jquery',
+				'plugin1-tests'
+			],
+
+			function(qunit, $, plugin1tests, App) {
+
+				qunit.module("cx-config");
+
+				plugin1tests();
+
+				qunit.start();
+			});
+
+		</script>
+	</head>
+	<body>
+
+		<div id="qunit"></div>
+		<div id="qunit-fixture"></div>
+
+	</body>
+</html>
