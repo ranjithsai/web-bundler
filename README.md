@@ -1,5 +1,29 @@
 # web-bundler
-A boilerplate that can embed all your HTML, CSS and JavaScript files into a single JavaScript file.
+
+Why Web-bundler? 
+
+To combine and inline all your html and javascript files into a javascript file. Similarly, all CSS files are minified into a single CSS file. Any image urls inside the css files are auto converted to inline binary texts.
+
+
+Flexibility:
+-----------
+
+	1. Define your own AMD plugin.
+	
+	2. Define your own technical stack.
+
+	3. Define you own build file names for JS and CSS by modifying the grunt file.
+
+
+Boilerplate Technical Stack:
+---------------------------
+
+	1. RequireJS for defining plugin.
+
+	2. Grunt for the build system.
+
+	3. JUnit for testing.
+
 
 Setting up widgets locally:
 --------------------------
@@ -23,6 +47,8 @@ Build steps:
 	        grunt web-bundler --> to generate a build with all the plugins
 
 	        grunt dev --> to generate non-optimized dev build with all plugins
+
+	        grunt web-bundler-prod --> to generate a build file for production
 
 
 To run application with node server:
