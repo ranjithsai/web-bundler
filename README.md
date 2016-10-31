@@ -20,7 +20,7 @@ Build steps:
 
 	4.  Use any of the below available builds to generate the build files.
 
-	        grunt widgets --> to generate a build with all the plugins
+	        grunt web-bundler --> to generate a build with all the plugins
 
 	        grunt dev --> to generate non-optimized dev build with all plugins
 
